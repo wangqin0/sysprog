@@ -1,2 +1,5 @@
 add_subdirectory(LRUCache)
 add_subdirectory(memcpy)
+add_subdirectory(power-of-2-check)
+add_subdirectory(align)
+add_subdirectory(count-set-bits)

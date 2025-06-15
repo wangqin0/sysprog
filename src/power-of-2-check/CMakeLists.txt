@@ -1,0 +1,6 @@
+add_library(power_of_2_check power-of-2-check.c)
+
+add_executable(test_power_of_2_check test_power_of_2_check.cpp)
+target_link_libraries(test_power_of_2_check power_of_2_check gtest_main)
+
+add_test(NAME PowerOf2CheckTest COMMAND test_power_of_2_check)
