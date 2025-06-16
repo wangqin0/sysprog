@@ -1,0 +1,6 @@
+add_library(memory_allocator memory_allocator.c)
+
+add_executable(test_memory_allocator test_memory_allocator.cpp)
+target_link_libraries(test_memory_allocator memory_allocator gtest_main)
+
+add_test(NAME MemoryAllocatorTest COMMAND test_memory_allocator)

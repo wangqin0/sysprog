@@ -1,0 +1,6 @@
+add_library(find_single_number find_single_number.c)
+
+add_executable(test_find_single_number test_find_single_number.cpp)
+target_link_libraries(test_find_single_number find_single_number gtest_main)
+
+add_test(NAME FindSingleNumberTest COMMAND test_find_single_number)

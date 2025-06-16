@@ -1,0 +1,6 @@
+add_library(register_toggle register_toggle.c)
+
+add_executable(test_register_toggle test_register_toggle.cpp)
+target_link_libraries(test_register_toggle register_toggle gtest_main)
+
+add_test(NAME RegisterToggleTest COMMAND test_register_toggle)

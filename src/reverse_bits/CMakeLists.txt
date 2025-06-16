@@ -1,0 +1,6 @@
+add_library(reverse_bits reverse_bits.c)
+
+add_executable(test_reverse_bits test_reverse_bits.cpp)
+target_link_libraries(test_reverse_bits reverse_bits gtest_main)
+
+add_test(NAME ReverseBitsTest COMMAND test_reverse_bits)

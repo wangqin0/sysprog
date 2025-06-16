@@ -1,4 +1,4 @@
-add_library(count_set_bits count-set-bits.c)
+add_library(count_set_bits count_set_bits.c)
 
 add_executable(test_count_set_bits test_count_set_bits.cpp)
 target_link_libraries(test_count_set_bits count_set_bits gtest_main)
